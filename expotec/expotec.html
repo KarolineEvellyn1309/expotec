@@ -1,0 +1,141 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <title> EXPOTEC 2023 </title>
+    <style>
+        div.logo{
+            background-image: url(expotec/);
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        div#q1{
+            background-position: center;
+        }
+        div.formulario{
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #f2f2f2;
+        }
+        th, td {
+            border: 1px solid #f2f2f2;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\karol\OneDrive\Nova pasta\expotec\expotec2023.jpg"> 
+    </div>
+    <h1>O QUE É A EXPOTEC?</h1>
+    <p> A Expotec (Exposição de Tecnologia e Ciência) é um evento realizado pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) que tem como objetivo promover a divulgação e a interação na área de tecnologia e ciência. O evento reúne estudantes, professores, pesquisadores e profissionais de diversas áreas para compartilhar conhecimentos, apresentar projetos, pesquisas e inovações tecnológicas, além de proporcionar um espaço para discussões e aprendizado. A Expotec do IFRN é um evento aberto ao público e normalmente acontece ao longo de vários dias, oferecendo uma série de atividades que incluem: Apresentação de Trabalhos Científicos, Palestras e Workshops, Exposições Tecnológicas, etc.</p>
+    <h1>QUANDO OCORRE A EXPOTEC?</h1>
+    <p>A Expotec do IFRN ocorre nos dias 20 até 24 de novembro, proporcionando uma semana repleta de aprendizado e inovação. Durante esse período, os participantes têm a chance de mergulhar no mundo da tecnologia, ciência e pesquisa, compartilhando conhecimentos e descobrindo as últimas tendências e desenvolvimentos em suas áreas de interesse. É um evento que destaca o compromisso do IFRN com a educação, a pesquisa e a promoção da ciência e tecnologia no Brasil. </p>
+    <h1 style= "text-align: center";> PREENCHA ESTE FORMULÁRIO PARA REALIZAR SUA INSCRIÇÃO: </h1>
+    <div class = "formulario" id="q1">
+        <form action="processar_inscricao.php" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="data nascimento">Data de Nascimento:</label>
+            <input type="date" id="data nascimento" name="data nascimento" required><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf" required>
+                <option value="RN">Rio Grande Do Norte </option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RS">Rio Grande do Sul</option>
+  
+            </select><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div> 
+    <h1 style= "text-align: center";> AGENDA DO EVENTO:</h1>
+    <p style= "text-align: center";> MANHÃ </p>
+        <table align="center">
+            <tr>
+                <th>Data</th>
+                <th>Evento</th>
+                <th>Horários</th>
+            </tr>
+            <tr>
+                <td>20/11</td>
+                <td>Abertura</td>
+                <td>7:00</td>
+            </tr>
+            <tr>
+                <td>21/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>7:00 até as 12:00</td>
+            </tr>
+            <tr>
+                <td>22/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>7:00 até as 12:00</td>
+            </tr>
+            <tr>
+                <td>23/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>7:00 até as 12:00</td>
+            </tr>
+        </table>
+        <p style= "text-align: center";> TARDE </p>
+        <table align="center">
+            <tr>
+                <th>Data</th>
+                <th>Evento</th>
+                <th>Horários</th>
+            </tr>
+            <tr>
+                <td>21/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>13:00 até as 18:00</td>
+            </tr>
+            <tr>
+                <td>22/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>13:00 até as 18:00</td>
+            </tr>
+            <tr>
+                <td>23/11</td>
+                <td>Apresentação de Trabalhos</td>
+                <td>13:00 até as 18:00</td>
+            </tr>
+            <tr>
+                <td>24/11</td>
+                <td>encerramento</td>
+                <td>16:00</td>
+            </tr>
+        </table>
+    <p>OBS: apresentação de trabalhos incluem palestras, oficinas, apresentação teatral, etc. Para mais informações, acesse o instagram do nosso instituto @ifrnoficial</p>
+</body>
